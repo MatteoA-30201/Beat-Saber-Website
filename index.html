@@ -28,17 +28,17 @@
           <ul class="navbar-nav">
             <li class="skeuomorphic-buttons-navbar">
               <a class="skeuomorphic-buttons heading-size-change">
-              PLACEHOLDER
+              MY SETTINGS
               </a>
             </li>
             <li class="skeuomorphic-buttons-navbar">
               <a class="skeuomorphic-buttons heading-size-change">
-              PLACEHOLDER
+              VIDEOS
               </a>
             </li>
             <li class="skeuomorphic-buttons-navbar">
               <a class="skeuomorphic-buttons heading-size-change">
-              PLACEHOLDER
+              BEATLEADER
               </a>
             </li>
           </ul>
@@ -47,12 +47,38 @@
     </nav>
   </div>
   <div class="container-fluid">
-    <div class="homepage-position div-position row" id="Homepage">
-      <div class="col-6 d-flex Scoresaber-container justify-content-center align-items-center">
-        <img class="scoreboard-logo" src="Photos/beatleader logo.png" alt="">
+    <div class="homepage-position div-position row d-flex justify-content-center align-items-center" id="Homepage">
+      <div class="row d-flex justify-content-center align-items-center d-flex flex-column" id="my-settings">
+        <div class="col d-flex mt-3 justify-content-center align-items-center title heading-1">
+          <h1 class="text-color">My Settings</h1>
+        </div>
+        <div class="col d-flex mt-3 justify-content-center align-items-center settings-container">
+          <div id="controller-settings-box" class="col-4 me-3 d-flex justify-content-center align-items-center left-controller-container default-text-box">
+            <p class="text-color heading-2 mb-0">Left Controller Settings</p>
+          </div>
+          <div id="controller-settings-box" class="col-4 me-3 d-flex justify-content-center align-items-center default-controller-container default-text-box">
+            <p class="text-color heading-2 mb-0">Default Controller Settings</p>
+          </div>
+          <div id="controller-settings-box" class="col-4 d-flex justify-content-center align-items-center right-controller-container default-text-box">
+            <p class="text-color heading-2 mb-0">Right Controller Settings</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 d-flex Beatleader-container justify-content-center align-items-center">
-        <img class="scoreboard-logo" src="Photos/scoresaber logo.png" alt="">
+      <div class="row d-flex flex-column" id="videos">
+        <div class="col d-flex mt-3 justify-content-center align-items-center title heading-1">
+          <h1 class="text-color">Videos</h1>
+        </div>
+        <div class="col d-flex mt-3 justify-content-center align-items-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=1X6ozedZU3jIf0zN&amp;list=PLPig74noAxiAtYHEy_3S_0Ln_c55heTm6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="row d-flex flex-column" id="beatleader">
+        <div class="col d-flex mt-3 justify-content-center align-items-center title heading-1">
+          <h1 class="text-color">Beatleader</h1>
+        </div>
+        <div class="col d-flex mt-3 Beatleader-container justify-content-center align-items-center">
+          <img class="scoreboard-logo" src="Photos/beatleader logo.png" alt="">
+        </div>
       </div>
     </div>
   </div>
