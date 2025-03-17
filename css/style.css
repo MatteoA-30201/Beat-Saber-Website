@@ -347,8 +347,15 @@ body {
   border-radius: 35px;
 }
 
-#controller-settings-box {
+.controller-settings-box {
   width: 150;
   height: 100px;
   text-align: center;
+  color: #CFFCFF;
+  transition: 0.25s;
+}
+
+.controller-settings-box:hover {
+  color: #3EBAC0;
+  background-color: #001515;
 }
