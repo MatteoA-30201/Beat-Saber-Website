@@ -359,3 +359,10 @@ body {
   color: #3EBAC0;
   background-color: #001515;
 }
+
+.settings-display-box {
+  width: 150;
+  height: 100px;
+  text-align: center;
+  color: #CFFCFF;
+}

@@ -1,28 +1,28 @@
-const vue_app = Vue.createApp({
-  data() {
-    return {
-      settings: [
-        { name: 'left-controller-container', image: 'Photos/Left hand.JPG'},
-        { name: 'default-controller-container', image: 'Photos/Default.JPG'},
-        { name: 'right-controller-container', image: 'Photos/Right hand.JPG'},
-      ],
+const settingsImage = document.getElementById('settingsDisplay');
+
+function changeSettings() {
+  let imageSrc;
+  const settingsId = ['left-settings', 'default-settings', 'right-settings'];
+  for (let i = 0; i < 2; i++) {
+    switch (i) {
+    case 0:
+      if (settingsId[0] = document.getElementsByClassName('controller-settings-box').id) {
+        imageSrc = "Photos/Left hand.JPG";
+      };
+      break;
+    case 1:
+      if (settingsId[1] = document.getElementsByClassName('controller-settings-box').id) {
+        imageSrc = "Photos/Default.JPG";
+      };
+      break;
+    case 2:
+      if (settingsId[2] = document.getElementsByClassName('controller-settings-box').id) {
+        imageSrc = "Photos/Right hand.JPG";
+        console.log("Photos/Right hand.JPG");
+      };
     }
-  },
-  methods: {
-    receiveEmit(settingsId) {
-      const elementId1 = document.getElementsByClassName(settings[0].name).id
-      const elementId2 = document.getElementsByClassName(settings[1].name).id;
-      const elementId3 = document.getElementsByClassName(settings[2].name).id;
-      console.log('Toggle settings:', settingsId);
-    }
-  },
-  // computed: {
-  //   image() {
-  //     return this.settings[index].image[0];
-  //   }
-  // }
+  }
+  console.log("Photos/Left hand.JPG")
+  settingsImage.src = imageSrc;
+}
 
-
-})
-
-vue_app.mount("#vue_app")
