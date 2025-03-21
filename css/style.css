@@ -348,7 +348,7 @@ body {
 }
 
 .controller-settings-box {
-  width: 150;
+  width: 200px;
   height: 100px;
   text-align: center;
   color: #CFFCFF;
@@ -361,8 +361,14 @@ body {
 }
 
 .settings-display-box {
-  width: 150;
-  height: 100px;
+  width: 510px;
+  height: 100%;
   text-align: center;
   color: #CFFCFF;
+}
+
+#settingsDisplay {
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
 }
